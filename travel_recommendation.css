@@ -6,7 +6,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
 }
 
 .navbar {
@@ -15,12 +14,12 @@ body {
   align-items: center;
   padding: 20px;
   background-color: #2C3E50;
+  color: white;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  color: white;
   font-size: 24px;
   font-weight: bold;
 }
@@ -52,10 +51,12 @@ body {
 .search-bar {
   display: flex;
   align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  padding: 8px 16px;
 }
 
 .search-bar input {
-  padding: 8px;
   border: none;
   border-radius: 4px;
   width: 250px;
@@ -73,4 +74,83 @@ body {
 
 .search-bar button:hover {
   background-color: #1ABC9C;
+}
+
+.hero {
+  position: relative;
+  background-image: url('city.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-subtext {
+  margin: 20px 0;
+  max-width: 600px;
+}
+
+.hero-subtext p {
+  font-size: 18px;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background-color: #16A085;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.cta-btn:hover {
+  background-color: #1ABC9C;
+}
+
+.social-media {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.social-media a {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
 }
