@@ -66,4 +66,6 @@ searchBtn.addEventListener("click", () => {
 
 clearBtn.addEventListener("click", () => {
   searchInput.value = "";
+  const resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = "Enter keywork like beaches, temples or countries";
 });
