@@ -94,14 +94,20 @@ body::before {
   background-color: #1abc9c;
 }
 
+.container {
+  display: flex;
+  flex: 1;
+}
+
 .introduction {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: white;
-  text-align: center;
+  padding-left: 80px;
+  padding-right: 40px;
 }
 
 .hero-text h1 {
@@ -112,7 +118,6 @@ body::before {
 
 .hero-subtext {
   margin: 20px 0;
-  max-width: 600px;
 }
 
 .hero-subtext p {
@@ -131,6 +136,31 @@ body::before {
 
 .cta-btn:hover {
   background-color: #1abc9c;
+}
+
+#result {
+  flex: 1;
+  padding: 12px;
+}
+
+.card {
+  border-radius: 12px;
+  background-color: white;
+  width: 500px;
+}
+
+.card .inner {
+  padding: 8px 12px;
+}
+
+.inner button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #16a085;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
 }
 
 .social-media {
